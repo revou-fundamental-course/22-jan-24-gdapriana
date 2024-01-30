@@ -1,9 +1,18 @@
-@use "colors"
+@use "colors" as col
+@use "font"
 
 html
   scroll-behavior: smooth
+
+a
+  text-decoration: none
+  color: col.$gray
 
 *, *::before, *::after
   padding: 0
   margin: 0
   box-sizing: border-box
+  font-family: 'Inter', sans-serif
+
+.__transition
+  transition: all ease-in-out .3s

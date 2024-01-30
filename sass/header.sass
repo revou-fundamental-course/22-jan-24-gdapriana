@@ -1,0 +1,47 @@
+@use "colors" as col
+@use "responsive-design" as responsive
+
+#header
+  width: 100%
+  border-bottom: col.$border solid 1px
+  display: flex
+  justify-content: center
+  align-items: center
+  .navbar
+    padding: 24px
+    width: 100%
+    max-width: 1080px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .brand
+      width: 100px
+      img
+        width: 100%
+    .hamburger
+      display: flex
+      justify-content: center
+      align-items: center
+      border: 1px col.$border solid
+      border-radius: 4px
+      padding: 4px
+      @media (min-width: responsive.$md)
+        display: none
+
+    .navigations
+      display: none
+      list-style: none
+      @media (min-width: responsive.$md)
+        display: flex
+        gap: 4px
+        li a
+          padding: 6px 10px
+          border-radius: 8px
+          display: flex
+          justify-content: center
+          align-items: center
+          gap: 4px
+          &:hover
+            background-color: #f0f0f0
+            color: col.$neutral
+
