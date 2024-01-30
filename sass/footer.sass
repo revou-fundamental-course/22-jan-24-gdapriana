@@ -1,0 +1,24 @@
+@use "colors" as col
+@use "responsive-design" as responsive
+
+#footer
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 12px
+  padding: 56px 12px
+  border-top: col.$border solid 1px
+
+  .footer-image
+    width: 124px
+    img
+      width: 100%
+
+  .footer-text
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: col.$gray
