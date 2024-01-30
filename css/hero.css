@@ -1,0 +1,97 @@
+#hero-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-content .wrapper {
+  padding: 24px;
+  width: 100%;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "headline" "slider" "contact";
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  #hero-content .wrapper {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "headline headline" "slider contact";
+  }
+}
+#hero-content .wrapper .headline {
+  grid-area: headline;
+  display: flex;
+  flex-direction: column;
+  padding: 104px 0;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+#hero-content .wrapper .headline h1 {
+  color: #6366f1;
+  text-align: center;
+  font-size: 2rem;
+}
+#hero-content .wrapper .headline p {
+  color: #798DA3;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#hero-content .wrapper .slider {
+  grid-area: slider;
+}
+#hero-content .wrapper .contact {
+  grid-area: contact;
+}
+#hero-content .wrapper .contact .contact-wrapper {
+  background-color: #EEF1F5;
+  padding: 24px;
+  border-radius: 12px;
+  width: 100%;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+#hero-content .wrapper .contact .contact-wrapper header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#hero-content .wrapper .contact .contact-wrapper header h3 {
+  color: #6366f1;
+}
+#hero-content .wrapper .contact .contact-wrapper header p {
+  color: #798DA3;
+}
+#hero-content .wrapper .contact .contact-wrapper form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#hero-content .wrapper .contact .contact-wrapper form label {
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+#hero-content .wrapper .contact .contact-wrapper form label span {
+  color: #798DA3;
+}
+#hero-content .wrapper .contact .contact-wrapper form label input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px #EEF1F5 solid;
+}
+#hero-content .wrapper .contact .contact-wrapper form button {
+  padding: 12px;
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=hero.css.map */
