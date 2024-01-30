@@ -14,10 +14,11 @@
     display: grid
     grid-template-columns: 1fr
     grid-template-areas: "headline" "slider" "contact"
-    gap: 12px
-    @media (min-width: responsive.$md)
+    gap: 56px
+    @media (min-width: responsive.$lg)
       grid-template-columns: 1fr auto
       grid-template-areas: "headline headline" "slider contact"
+      gap: 24px
 
     .headline
       grid-area: headline
@@ -38,7 +39,110 @@
 
     .slider
       grid-area: slider
+      .slider-wrapper
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: start
+        gap: 12px
+        @media (min-width: responsive.$md)
+          width: auto
 
+        .slider-image
+          width: 100%
+          background-color: col.$border
+          aspect-ratio: 16/9
+          border-radius: 16px
+          overflow: hidden
+          @media (min-width: responsive.$lg)
+            width: 700px
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+        .review
+          width: 100%
+          display: flex
+          flex-direction: column
+          justify-content: start
+          align-items: center
+          gap: 16px
+
+          &::after
+            content: ""
+            border-radius: 999em
+            margin: 20px
+            width: 20%
+            height: 2px
+            background-color: col.$border
+
+          .review-message p
+            color: col.$gray
+            font-style: italic
+            padding: 20px
+
+          .reviewer
+            display: flex
+            justify-content: start
+            align-items: center
+            gap: 12px
+
+            .img-profile
+              width: 50px
+              height: 50px
+              overflow: hidden
+              border-radius: 50%
+              img
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+            .profile
+              h3
+                color: col.$indigo
+              p
+                color: col.$gray
+                font-style: italic
+
+        .offer-information
+          width: 100%
+          display: flex
+          flex-direction: column
+          justify-content: start
+          align-items: start
+          gap: 24px
+          h3
+            color: col.$neutral
+            width: 80%
+
+          .offer-list
+            padding: 10px
+            display: flex
+            width: 100%
+            flex-direction: column
+            justify-content: start
+            align-items: center
+            gap: 8px
+
+            .offer
+              width: 100%
+              display: flex
+              gap: 12px
+              justify-content: start
+              align-items: center
+              color: col.$gray
+
+              .icon-wrapper
+                width: 42px
+                height: 42px
+                border-radius: 50%
+                overflow: hidden
+                border: 1px solid col.$gray
+                display: flex
+                justify-content: center
+                align-items: center
     .contact
       grid-area: contact
       .contact-wrapper
