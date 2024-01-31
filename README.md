@@ -1,4 +1,7 @@
-### Hello World
+### E-Groceries
+
+![image](https://github.com/revou-fundamental-course/22-jan-24-gdapriana/assets/69134731/03bedbac-bee7-438b-aaee-fc39374a862a)
+
 
 Mini Coding Project 👉 https://rebrand.ly/brief-miniproject
 
