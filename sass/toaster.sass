@@ -1,0 +1,19 @@
+@use "colors" as col
+
+.toaster
+  position: fixed
+  bottom: 0
+  margin: 64px
+  right: 0
+  border: 1px solid col.$border
+  padding: 20px
+  border-radius: 10px
+  display: flex
+  gap: 4px
+  background-color: col.$white
+  transition: all ease-in-out .5s
+  justify-content: center
+  align-items: center
+
+.toaster.hide
+  transform: translateY(300px)

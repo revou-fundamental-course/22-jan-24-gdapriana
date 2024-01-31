@@ -29,7 +29,7 @@
       justify-content: center
       align-items: center
       h1
-        color: col.$indigo
+        color: col.$primary
         text-align: center
         font-size: 2rem
       p
@@ -131,7 +131,7 @@
 
             .profile
               h3
-                color: col.$indigo
+                color: col.$primary
               p
                 color: col.$gray
                 font-style: italic
@@ -192,7 +192,7 @@
           gap: 8px
 
           h3
-            color: col.$indigo
+            color: col.$primary
 
           p
             color: col.$gray
@@ -202,6 +202,12 @@
           display: flex
           flex-direction: column
           gap: 24px
+
+          .form-control.error input
+            border: 1px solid red
+          .form-control.success input
+            border: 1px solid col.$primary
+
           label
             width: 100%
             gap: 8px
@@ -209,14 +215,30 @@
             flex-direction: column
             span
               color: col.$gray
-            input
+              font-size: .9rem
+            input, select
               padding: 12px
               border-radius: 8px
               border: 1px col.$border solid
 
+              &::placeholder
+                color: col.$gray
+
+            select
+              appearance: auto
+              -webkit-appearance: none
+
+
           button
             padding: 12px
-            background-color: col.$indigo
+            margin-top: 20px
+            background-color: col.$primary
             color: col.$white
             border: none
+            font-size: 1.1rem
             border-radius: 8px
+            display: flex
+            justify-content: center
+            gap: 8px
+            cursor: pointer
+            align-items: center

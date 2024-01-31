@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/hero.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/toaster.css" />
 
     <script src="./js/navbar.js" defer></script>
     <script src="./js/slider.js" defer></script>
@@ -112,20 +113,26 @@
               <h3>Contact Us</h3>
               <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
             </header>
-            <form action="">
-              <label for="name">
+            <form action="" id="contact-form">
+              <label for="name" class="form-control">
                 <span>Your Name</span>
                 <input type="text" placeholder="Firs and last name" id="name" name="name" required>
+                <small></small>
               </label>
-              <label for="email">
+              <label for="email" class="form-control">
                 <span>Emal Address</span>
-                <input type="email" id="email" placeholder="example@gmail.com" name="email" required>
+                <input type="text" id="email" placeholder="example@gmail.com" name="email" required>
+                <small></small>
               </label>
               <label for="interest">
                 <span>What are you interested in?</span>
-                <input type="email" id="interest" name="interest">
+                <select id="interest" name="interest">
+                  <option value="saab" selected>Food</option>
+                  <option value="opel">Drink</option>
+                  <option value="audi">Groceries</option>
+                </select>
               </label>
-              <button type="submit">SEND</button>
+              <button type="submit">Send <i data-feather="send" width="16"></i></button>
             </form>
           </div>
         </article>
@@ -151,6 +158,10 @@
         <p>2024 Moqups</p>
       </div>
     </footer>
+    
+    <div class="toaster hide">
+      Data sent successsfully <i data-feather="check" width="16"></i>
+    </div>
     <script>
       feather.replace();
     </script>

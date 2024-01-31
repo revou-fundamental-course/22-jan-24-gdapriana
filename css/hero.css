@@ -100,7 +100,7 @@
   transition: all ease 0.5s;
 }
 #hero-content .wrapper .slider .slider-wrapper .slider-images-carousel .controls .control {
-  color: #fff;
+  color: #FFF;
 }
 #hero-content .wrapper .slider .slider-wrapper .review {
   width: 100%;
@@ -217,6 +217,12 @@
   flex-direction: column;
   gap: 24px;
 }
+#hero-content .wrapper .contact .contact-wrapper form .form-control.error input {
+  border: 1px solid red;
+}
+#hero-content .wrapper .contact .contact-wrapper form .form-control.success input {
+  border: 1px solid #6366f1;
+}
 #hero-content .wrapper .contact .contact-wrapper form label {
   width: 100%;
   gap: 8px;
@@ -225,18 +231,33 @@
 }
 #hero-content .wrapper .contact .contact-wrapper form label span {
   color: #798DA3;
+  font-size: 0.9rem;
 }
-#hero-content .wrapper .contact .contact-wrapper form label input {
+#hero-content .wrapper .contact .contact-wrapper form label input, #hero-content .wrapper .contact .contact-wrapper form label select {
   padding: 12px;
   border-radius: 8px;
   border: 1px #EEF1F5 solid;
 }
+#hero-content .wrapper .contact .contact-wrapper form label input::placeholder, #hero-content .wrapper .contact .contact-wrapper form label select::placeholder {
+  color: #798DA3;
+}
+#hero-content .wrapper .contact .contact-wrapper form label select {
+  appearance: auto;
+  -webkit-appearance: none;
+}
 #hero-content .wrapper .contact .contact-wrapper form button {
   padding: 12px;
+  margin-top: 20px;
   background-color: #6366f1;
-  color: #fff;
+  color: #FFF;
   border: none;
+  font-size: 1.1rem;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  align-items: center;
 }
 
 /*# sourceMappingURL=hero.css.map */
