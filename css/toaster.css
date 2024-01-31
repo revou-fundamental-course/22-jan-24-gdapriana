@@ -1,0 +1,21 @@
+.toaster {
+  position: fixed;
+  bottom: 0;
+  margin: 64px;
+  right: 0;
+  border: 1px solid #EEF1F5;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 4px;
+  background-color: #FFF;
+  transition: all ease-in-out 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+
+.toaster.hide {
+  transform: translateY(300px);
+}
+
+/*# sourceMappingURL=toaster.css.map */
