@@ -1,0 +1,43 @@
+
+@use "colors" as col
+@use "responsive-design" as responsive
+
+
+.float-navbar
+  position: fixed
+  padding: 60px 20px
+  z-index: 9999
+  top: 0
+  border-bottom: 1px solid col.$border
+  left: 0
+  right: 0
+  display: flex
+  width: 100%
+  transition: all ease-in-out .5s
+  background-color: col.$white
+  @media (min-width: responsive.$md)
+    display: none
+  .navigations
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    gap: 16px
+    list-style: none
+
+    li a
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: 8px
+
+  .close-btn
+    position: absolute
+    bottom: 0
+    right: 0
+    padding: 10px
+    color: col.$gray
+
+.float-navbar.hide
+  transform: translateY(-400px)
