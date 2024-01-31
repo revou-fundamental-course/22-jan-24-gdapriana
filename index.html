@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/footer.css" />
 
     <script src="./js/navbar.js" defer></script>
+    <script src="./js/slider.js" defer></script>
     <script src="./js/form-auth.js" defer></script>
 
     <!--feather icon-->
@@ -30,7 +31,7 @@
           <i width="36" data-feather="menu"></i>
         </div>
         <ul class="navigations">
-          <li><a href="#home" class="__transition"><i width="16" data-feather="home"></i>Home</a></li>
+          <li><a href="#hero-content" class="__transition"><i width="16" data-feather="home"></i>Home</a></li>
           <li><a href="#package" class="__transition"><i width="16" data-feather="box"></i>Our Package</a></li>
           <li><a href="#call" class="__transition"><i width="16" data-feather="phone-forwarded"></i>Call Us</a></li>
         </ul>
@@ -45,8 +46,20 @@
         </article>
         <article class="slider">
           <div class="slider-wrapper">
-            <div class="slider-image">
-              <img src="https://source.unsplash.com/random/1920x1080/?groceries" alt="groceries">
+            <div class="slider-images-carousel">
+              <div class="slides">
+                <img src="https://source.unsplash.com/random/1920x1080/?food" class="slide"  alt="groceries">
+                <img src="https://source.unsplash.com/random/1920x1080/?fruit" class="slide" alt="groceries">
+                <img src="https://source.unsplash.com/random/1920x1080/?groceries" class="slide" alt="groceries">
+              </div>
+              <div class="controls">
+                <div class="control prev-slide">
+                  <i width="42" data-feather="chevron-left"></i>
+                </div>
+                <div class="control next-slide">
+                  <i width="42" data-feather="chevron-right"></i>
+                </div>
+              </div>
             </div>
             <div class="review">
               <div class="review-message">
@@ -138,7 +151,7 @@
         <p>2024 Moqups</p>
       </div>
     </footer>
-    <script defer>
+    <script>
       feather.replace();
     </script>
   </body>
